@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    text-decoration: none;
+    color: black;
+}
+body{
+    background-color: #0093AB;
+}
+.menu{
+    width: 100%;
+    margin:auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #00AFC1;
+}
+.menu-item{
+    font-size: 18px;
+    padding: 9px;
+}
+.index-logo{
+    width: 200px;
+}
+.carimg{
+    width: 500px;
+    float: right;
+    margin: 0 20px;
+}
+.carimg2{
+    width: 500px;
+    float: left;
+    margin: 20px;
+}
+.title-text{
+    margin: 20px;
+    width: 100%;
+    color: #FFD124;
+    float: left;
+}
+.subtitle-text{
+    margin:20px;
+    margin-top: 0;
+    width: 100%;
+    color: #FFD124;
+    float: left;
+}
+.content-text{
+    color:whitesmoke;
+    text-align: justify;
+    line-height: 30px;
+    margin 10px 5px;
+}
+.ul-item{
+    color: wheat;
+}
