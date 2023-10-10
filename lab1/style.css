@@ -14,32 +14,20 @@ body{
     background-color: #00AFC1;
 }
 .menu-item{
-    font-size: 18px;
+    font-size: 20px;
     padding: 9px;
 }
 .index-logo{
     width: 200px;
 }
-.carimg{
-    width: 500px;
-    float: right;
-    margin: 0 20px;
-}
-.carimg2{
-    width: 500px;
-    float: left;
-    margin: 20px;
-}
 .title-text{
     margin: 20px;
-    width: 100%;
+    width: 80%;
     color: #FFD124;
     float: left;
 }
 .subtitle-text{
     margin:20px;
-    margin-top: 0;
-    width: 100%;
     color: #FFD124;
     float: left;
 }
@@ -47,7 +35,29 @@ body{
     color:whitesmoke;
     text-align: justify;
     line-height: 30px;
-    margin 10px 5px;
+    margin: 10px 5px;
+}
+.content-img{
+    width: 500px;
+    float:right;
+    margin: 0px 50px 5px 50px;
+}
+.content-imgr{
+    width: 500px;
+    float:left;
+    margin: 20px 20px 20px 0px;
+}
+.content-text{
+    text-align: justify;
+    margin: 20px;
+}
+.box{
+    height: 250px;
+    width: 850px;
+}
+.list{
+       float: left;
+    
 }
 .ul-item{
     color: wheat;
