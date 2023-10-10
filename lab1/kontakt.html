@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Language" content="pl" />
+    <meta name="Author" content="Marceli Sobiecki" />
+    <link rel="stylesheet" href="style.css">
+    <title>Test</title>
+</head>
+
+<body>
+    <header>
+        <table class="menu">
+            <tr>
+                <td class="menu-item1"><a href="index.html"><img class="index-logo" src="./img/logo.png" /></a>
+                </td>
+                <td class="menu-item"><a href="audi.html"><b>Audi</b></a></td>
+                <td class="menu-item"><a href="bmw.html"><b>BMW</b></a></td>
+                <td class="menu-item"><a href="opel.html"><b>Opel</b></a></td>
+                <td class="menu-item"><a href="peugeot.html"><b>Peugeot</b></a></td>
+                <td class="menu-item"><a href="kontakt.html"><b>Kontakt</b></a></td>
+            </tr>
+        </table>
+    </header>
+    <main>
+        <div class="container">
+            <h2 class="form-heading">Formularz e-mail</h2>
+            <form action="mailto:przyklad@email.com" method="post" enctype="text/plain">
+                <label for="nick">Nick:</label><br>
+                <input type="text" id="nick" name="nick" class="input-field" required><br><br>
+
+                <label for="tekst">Tekst:</label><br>
+                <textarea id="tekst" name="tekst" class="textarea-field" rows="4" cols="50" required></textarea><br><br>
+
+                <input type="submit" class="submit-button" value="Wyślij">
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
