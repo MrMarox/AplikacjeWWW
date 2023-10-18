@@ -1,0 +1,43 @@
+npm<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="kolorujtlo.js" type="text/javascript"></script>
+        <script src="timedate.js" type="text/javascript"></script>
+        <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="Content-Language" content="pl" />
+        
+        <meta name="Author" content="Marceli Sobiecki" />
+        
+        <title>Test</title>
+    </head>
+    <body onload="startclock()">
+        <FORM METHOD="POST" NAME="background">
+            <INPUT id="animacjatest" TYPE="button" VALUE="żółty" ONCLICK="changeBackground('#FFF000')">
+            <INPUT TYPE="button" VALUE="czarny" ONCLICK="changeBackground ('#000000')">
+            <INPUT TYPE="button" VALUE="biały" ONCLICK="changeBackground('#FFFFFF')">
+            <INPUT TYPE="button" VALUE="zielony" ONCLICK="changeBackground ('#00FF00')">
+            <INPUT TYPE="button" VALUE="niebieski" ONCLICK="changeBackground ('#0000FF')">
+            <INPUT TYPE="button" VALUE="pomarańczowy" ONCLICK="changeBackground ('#FF8000')">
+            <INPUT TYPE="button" VALUE="szary" ONCLICK="changeBackground('#c0c0c0')">
+            <INPUT TYPE="button" VALUE="czerwony" ONCLICK="changeBackground ('#FF0000')">
+        </FORM>
+        <div id="zegarek"></div>
+        <div id="data"></div>
+        <script>
+            $("#animacjatest").on({
+                "mouseover" : function() {
+                    $(this).animate({
+                        width:300
+                    }, 800);
+                },
+                "mouseout" : function() {
+                    $(this).animate({
+                        width: 200
+                    }, 800);
+                }
+              });
+               
+        </script>
+    </body>
+</html>

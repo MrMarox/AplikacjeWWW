@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="timedate.js"type="text/javascript"></script>
+    <script src="kolorujtlo.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Language" content="pl" />
+    <meta name="Author" content="Marceli Sobiecki" />
+    <link rel="stylesheet" href="style.css">
+    <title>Test</title>
+</head>
+
+<body onload="startclock()">
+    <header>
+        <table class="menu">
+            <tr>
+                <td class="menu-item1"><a href="index.html"><img class="index-logo" src="./img/logo.png" /></a>
+                </td>
+                <td class="menu-item"><a href="audi.html"><b>Audi</b></a></td>
+                <td class="menu-item"><a href="bmw.html"><b>BMW</b></a></td>
+                <td class="menu-item"><a href="opel.html"><b>Opel</b></a></td>
+                <td class="menu-item"><a href="peugeot.html"><b>Peugeot</b></a></td>
+                <td class="menu-item"><a href="kontakt.html"><b>Kontakt</b></a></td>
+            </tr>
+        </table>
+    </header>
+        <div id="zegarek"></div>
+        <div id="data"></div>
+        <INPUT TYPE="button" VALUE="żółty" ONCLICK="changeBackground('#FFF000')">
+        <INPUT TYPE="button" VALUE="czarny" ONCLICK="changeBackground ('#000000')">
+        <INPUT TYPE="button" VALUE="biały" ONCLICK="changeBackground('#FFFFFF')">
+        <INPUT TYPE="button" VALUE="zielony" ONCLICK="changeBackground ('#00FF00')">
+        <INPUT TYPE="button" VALUE="niebieski" ONCLICK="changeBackground ('#0000FF')">
+        <INPUT TYPE="button" VALUE="pomarańczowy" ONCLICK="changeBackground ('#FF8000')">
+        <INPUT TYPE="button" VALUE="szary" ONCLICK="changeBackground('#c0c0c0')">
+        <INPUT TYPE="button" VALUE="czerwony" ONCLICK="changeBackground ('#FF0000')">
+    <main id="main">
+        <div id="animacjatest" class="container">
+            <h2 class="form-heading">Formularz e-mail</h2>
+            <form action="mailto:przyklad@email.com" method="post" enctype="text/plain">
+                <label for="nick">Nick:</label><br>
+                <input type="text" id="nick" name="nick" class="input-field" required><br><br>
+
+                <label for="tekst">Tekst:</label><br>
+                <textarea id="tekst" name="tekst" class="textarea-field" rows="4" cols="50" required></textarea><br><br>
+
+                <input id="animacjatest2" type="submit" class="submit-button" value="Wyślij">
+            </form>
+        </div>
+    </main>
+    <script>
+        $("#animacjatest").on({
+            "mouseover" : function() {
+                $(this).animate({
+                    width:300
+                }, 800);
+            },
+            "mouseout" : function() {
+                $(this).animate({
+                    width: 200
+                }, 800);
+            }
+          });
+           
+
+        $("#animacjatest2").on("click", function(){
+            if(!$(this).is(":animated")){
+                $(this).animate({
+                    width: "+=" + 50,
+                    height: "+=" + 10,
+                    opacity: "-=" + 0.1,
+                    duraction : 3000
+                });
+            }
+        });
+        
+    </script>
+</body>
+
+</html>
