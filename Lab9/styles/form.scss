@@ -1,0 +1,80 @@
+$White: #fff;
+$main: #697C9B;
+$Black: #000;
+
+
+.form{
+    margin-top: 100px;
+    &-title{
+        text-align: center;
+        font-size:48px;
+        font-weight: 800;
+        margin-bottom: 23px;
+    }
+    &-text{
+        text-align: center;
+        font-size: 18px;
+        font-weight: 800;
+        line-height: 33px;
+        margin-bottom: 20px;
+    }
+    &-container{
+        .top{
+            display: flex;
+            position: relative;
+            justify-content: space-between;
+            margin-top: 10px;
+            &-left, &-right{
+                display: flex;
+                flex-direction: column;
+                gap:15px;
+                margin-bottom: 20px;
+                input{
+                    padding: 20px;
+                    width: 35vw;
+                    border: 4px solid Black;
+                    box-shadow: 8px 9px 0px $main;
+                    background-color: $White; 
+                    font-weight: 900;
+                    font-size: 16px;
+                    color:$Black;
+
+                }
+            }
+        }.textarea{
+            display: flex;
+            justify-content: center;
+            textarea{
+                width:100%;
+                height: 25vh;
+                padding: 20px;
+                border: 4px solid $Black;
+                box-shadow: 8px 9px 0px $main;
+                background-color: $White; 
+                font-family: 'Inter';
+                font-style: normal;     
+                font-weight: 900;
+                font-size: 16px;
+                color:$Black;
+            }
+        }
+        .sub{
+            border: 4px solid $Black;
+            background-color: $main;
+            font-weight: 900;
+            font-size: 27px;
+            float: right;
+            color:$Black;
+            margin-bottom: 100px;
+            margin-top: 20px;
+            padding:15px 35px 15px 35px; 
+        }
+        .sub:hover{
+            background-color: $White;
+        }
+       
+    }
+    ::placeholder {
+        color:$Black;
+    }
+}
